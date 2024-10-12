@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar color="mycolor1">
+    <ion-title>
+      <img src="assets\images\carpinteria.jpg" style="height: 40px;"/>
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="cart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Carpintería Garcia</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Muebles hechos a mano con la mejor calidad y diseño personalizado.
+    </ion-card-content>
+  </ion-card>
+  <div class="menu-grid">
+    <div class="menu-item" (click)="navigateTo('agendar')">
+      <img src="assets/images/calendario.png" alt="Agendar" />
+      <p>Agenda tu cita</p>
+    </div>
+    <div class="menu-item" (click)="navigateTo('catalogo')">
+      <img src="assets/images/comedor.png" alt="Productos" />
+      <p>Productos</p>
+    </div>
+    <div class="menu-item" (click)="navigateTo('quienes-somos')">
+      <img src="assets/images/consejos-y-trucos.png" alt="¿Quiénes Somos?" />
+      <p>Trucos y Consejos</p>
+    </div>
+    <div class="menu-item" (click)="irpreguntas()">
+      <img src="assets/images/pregunta-y-respuesta.png" alt="Contáctanos" />
+      <p>Preguntas y Respuestas</p>
+    </div>
+    <div class="menu-item" (click)="navigateTo('contacto')">
+      <img src="assets/images/puntero-del-mapa.png" alt="Contáctanos" />
+      <p>Tienda Local</p>
+    </div>
+    <div class="menu-item" (click)="navigateTo('contacto')">
+      <img src="assets/images/calcular.png" alt="Contáctanos" />
+      <p>Conversor de Unidades</p>
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar color="mycolor1">
+    <ion-title>© Carpinteria García</ion-title>
+  </ion-toolbar>
+</ion-footer>
